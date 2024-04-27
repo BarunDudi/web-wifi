@@ -5,9 +5,9 @@ import { paketData } from "../paket";
 export default function Card({ data, idx }: any) {
   return (
     <div
-      className={`px-[15px] pt-[15px] pb-[70px] rounded-[5px] bg-white shadow-lg border-[2px] border-opacity-50 shrink-0 relative`}
+      className={`px-[15px] pt-[15px] pb-[70px] leading-[15px] rounded-[5px] bg-white shadow-lg border-[2px] border-opacity-50 shrink-0 relative max-w-[98%]`}
       style={{ borderColor: `#${data.rank.warna}` }}
-      key={idx}
+      key={idx + 1}
     >
       {/* additional */}
       <div
@@ -25,7 +25,7 @@ export default function Card({ data, idx }: any) {
       <div className="flex justify-between gap-[50px]">
         <div className="flex flex-col gap-[20px]">
           <div className="py-[8px]">
-            <img src="stream-logo.webp" className="h-[30px]" />
+            <img src={`${data.group}.webp`} className="h-[30px]" />
           </div>
           <div className="flex gap-[5px] items-center">
             <img src="money.svg" className="w-[30px]" alt="" />
@@ -92,6 +92,39 @@ export default function Card({ data, idx }: any) {
             <li className="flex items-center gap-[5px]">
               <img src="saving-light.svg" className="w-[20px]" alt="" />
               <p>extra cashback Rp {data.extraCashback}</p>
+            </li>
+          )}
+
+          {data.channel && (
+            <li className="flex flex-col gap-[8px]">
+              <div className="flex items-center gap-[5px]">
+                <img src="hd-light.svg" className="w-[20px]" alt="" />
+                <p>{data.channel.total} TV channel</p>
+              </div>
+              <div className="flex gap-[8px] pl-[25px]">
+                <div>
+                  <p className="bg-blue-500 text-white rounded-sm py-[5px] px-[10px]">
+                    {data.channel.sd} SD
+                  </p>
+                </div>
+                <div>
+                  <p className="bg-blue-500 text-white rounded-sm py-[5px] px-[10px]">
+                    {data.channel.hd} HD
+                  </p>
+                </div>
+                <div>
+                  <p className="bg-blue-500 text-white rounded-sm py-[5px] px-[10px]">
+                    {data.channel.fork} 4K
+                  </p>
+                </div>
+              </div>
+            </li>
+          )}
+
+          {data.sudahTermasuk && (
+            <li className="flex items-center gap-[5px]">
+              <img src="hd-light.svg" className="w-[20px]" alt="" />
+              <p>sudah termasuk {data.sudahTermasuk}</p>
             </li>
           )}
         </ul>

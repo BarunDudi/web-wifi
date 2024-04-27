@@ -8,8 +8,19 @@ import Card from "./components/Card";
 export default function page({ searchParams }) {
   const router = useRouter();
   const [filter, setFilter] = useState(searchParams.v || "semua");
+  const [dataCards, setDataCards] = useState([]);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    if (filter === "stream") {
+      setDataCards(paketData.stream);
+    } else if (filter === "joy") {
+      setDataCards(paketData.joy);
+    } else if (filter === "star") {
+      setDataCards(paketData.star);
+    } else {
+      setDataCards([...paketData.stream, ...paketData.joy, ...paketData.star]);
+    }
+  }, [filter]);
 
   return (
     <div className="min-h-screen overflow-hidden">
@@ -51,6 +62,10 @@ export default function page({ searchParams }) {
               className={`filter-button text-black ${
                 filter === "stream" ? "filter-active" : "filter-not-active"
               }`}
+              onClick={() => {
+                router.push("/paket?v=stream");
+                setFilter("stream");
+              }}
             >
               internet & streaming
             </button>
@@ -58,6 +73,10 @@ export default function page({ searchParams }) {
               className={`filter-button text-black ${
                 filter === "joy" ? "filter-active" : "filter-not-active"
               }`}
+              onClick={() => {
+                router.push("/paket?v=joy");
+                setFilter("joy");
+              }}
             >
               internet & TV
             </button>
@@ -65,6 +84,10 @@ export default function page({ searchParams }) {
               className={`filter-button text-black ${
                 filter === "star" ? "filter-active" : "filter-not-active"
               }`}
+              onClick={() => {
+                router.push("/paket?v=star");
+                setFilter("star");
+              }}
             >
               internet , TV & streaming
             </p>
@@ -73,9 +96,10 @@ export default function page({ searchParams }) {
 
         {/* body */}
         <div className="flex gap-[20px] flex-nowrap overflow-x-scroll py-[50px] px-[20px]">
-          {paketData.stream.map((i, idx) => {
-            return <Card data={i} idx={idx} />;
-          })}
+          {dataCards &&
+            dataCards.map((data, idx) => {
+              return <Card data={data} idx={idx} />;
+            })}
         </div>
       </div>
     </div>
