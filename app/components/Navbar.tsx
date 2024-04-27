@@ -32,7 +32,7 @@ export default function Navbar() {
       ref={navbarRef}
     >
       <div className="flex gap-[5px]">
-        <Link href={"#"}>
+        <Link href={"/"}>
           <img
             src={`logo-${ontop ? "dark" : "light"}.png`}
             className="h-[70px]"

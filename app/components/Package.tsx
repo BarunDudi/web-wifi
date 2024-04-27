@@ -1,4 +1,6 @@
-// pilih paket
+"use client";
+
+import Link from "next/link";
 
 export default function Package() {
   return (
@@ -16,7 +18,7 @@ export default function Package() {
         {/* streaming */}
         <div className="rounded-[9px] overflow-hidden flex flex-col shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           {/* header */}
-          <div className="h-[200px] relative">
+          <div className="h-[200px] overflow-hidden relative">
             <img src="streaming.jpg" className="w-full" alt="" />
             <div className="bg-white rounded-[5px] px-[14px] py-[3px] absolute top-[10px] left-[10px] flex items-center gap-[5px]">
               <div className="w-[7px] h-[7px] rounded-full bg-black"></div>
@@ -65,16 +67,19 @@ export default function Package() {
               </div>
             </div>
 
-            <button className="absolute bottom-[10px] bg-blue-500 text-white font-figtree font-bold rounded-[5px] px-[20px] py-[8px] right-[10px]">
+            <Link
+              href="/paket?v=stream"
+              className="absolute bottom-[10px] bg-blue-500 text-white font-figtree font-bold rounded-[5px] px-[20px] py-[8px] right-[10px]"
+            >
               lihat paket
-            </button>
+            </Link>
           </div>
         </div>
 
         {/* tv */}
         <div className="rounded-[9px] overflow-hidden flex flex-col shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           {/* header */}
-          <div className="h-[200px] relative">
+          <div className="h-[200px] overflow-hidden relative">
             <img src="tv.jpg" className="w-full" alt="" />
             <div className="bg-white rounded-[5px] px-[14px] py-[3px] absolute top-[10px] left-[10px] flex items-center gap-[5px]">
               <div className="w-[7px] h-[7px] rounded-full bg-black"></div>
@@ -111,16 +116,19 @@ export default function Package() {
               </div>
             </div>
 
-            <button className="absolute bottom-[10px] bg-blue-500 text-white font-figtree font-bold rounded-[5px] px-[20px] py-[8px] right-[10px]">
+            <Link
+              href="/paket?v=joy"
+              className="absolute bottom-[10px] bg-blue-500 text-white font-figtree font-bold rounded-[5px] px-[20px] py-[8px] right-[10px]"
+            >
               lihat paket
-            </button>
+            </Link>
           </div>
         </div>
 
         {/* star */}
         <div className="rounded-[9px] overflow-hidden flex flex-col shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           {/* header */}
-          <div className="h-[200px] relative">
+          <div className="h-[200px] overflow-hidden relative">
             <img src="super.jpg" className="w-full" alt="" />
             <div className="bg-white rounded-[5px] px-[14px] py-[3px] absolute top-[10px] left-[10px] flex items-center gap-[5px]">
               <div className="w-[7px] h-[7px] rounded-full bg-black"></div>
@@ -172,9 +180,12 @@ export default function Package() {
               </div>
             </div>
 
-            <button className="absolute bottom-[10px] bg-blue-500 text-white font-figtree font-bold rounded-[5px] px-[20px] py-[8px] right-[10px]">
+            <Link
+              href="/paket?v=star"
+              className="absolute bottom-[10px] bg-blue-500 text-white font-figtree font-bold rounded-[5px] px-[20px] py-[8px] right-[10px]"
+            >
               lihat paket
-            </button>
+            </Link>
           </div>
         </div>
       </div>
