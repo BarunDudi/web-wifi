@@ -5,7 +5,7 @@ import { paketData } from "../paket";
 export default function Card({ data, idx }: any) {
   return (
     <div
-      className={`px-[15px] pt-[15px] pb-[70px] leading-[15px] rounded-[5px] bg-white shadow-lg border-[2px] border-opacity-50 shrink-0 relative max-w-[98%]`}
+      className={`px-[15px] pt-[15px] pb-[70px] leading-[15px] rounded-[5px] bg-slate-100 shadow-lg border-[2px] border-opacity-50 shrink-0 relative max-w-[98%]`}
       style={{ borderColor: `#${data.rank.warna}` }}
       key={idx + 1}
     >
@@ -35,13 +35,17 @@ export default function Card({ data, idx }: any) {
             </div>
           </div>
         </div>
-        <div className="w-[93px] h-[87px] relative">
-          <img src="internet-speed.svg" className="" alt="" />
-          <img
-            src="internet-low.svg"
-            className="absolute bottom-0 left-0"
-            alt=""
-          />
+
+        <div className="w-[93px] h-[87px] relative bg-stone-600 rounded-full text-white">
+          <div className="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <p>up to</p>
+            <div style={{ color: `#${data.rank.warna}` }}>
+              <h1 className="text-center text-[1.5rem] pt-[5px]">
+                {data.speed}
+              </h1>
+              <p>Mbps</p>
+            </div>
+          </div>
         </div>
       </div>
 

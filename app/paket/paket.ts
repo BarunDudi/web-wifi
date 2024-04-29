@@ -109,7 +109,7 @@ export const paketData = {
       doubleCashbackPerMount: "70.000",
       extraCashback: "50.000",
       rank: {
-        warna: "D7D7D7",
+        warna: "FFD700",
         name: "gold",
       },
     },
@@ -188,7 +188,7 @@ export const paketData = {
       doubleCashbackPerMount: "400.000",
       extraCashback: "100.000",
       rank: {
-        warna: "D7D7D7",
+        warna: "FFD700",
         name: "gold",
       },
     },

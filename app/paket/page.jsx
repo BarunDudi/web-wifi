@@ -25,15 +25,17 @@ export default function page({ searchParams }) {
   return (
     <div className="min-h-screen overflow-hidden">
       {/* jumbotron */}
-      <div className="h-[550px] bg-[#FFC55A] text-white py-[100px] px-[10px] relative overflow-hidden">
-        <h1 className="text-[2rem] leading-8 pb-[5px]">
-          Langganan wi-fi rumah dan TV kabel terbaik
-        </h1>
-        <p>makin nyaman dirumah dengan unlimited internet</p>
+      <div className="h-[550px] bg-[#FFC55A] text-white py-[100px] lg:py-[300px] px-[10px] md:px-[50px] lg:px-[100px] relative overflow-hidden md:flex items-center">
+        <div>
+          <h1 className="text-[2rem] leading-8 pb-[5px]">
+            Langganan wi-fi rumah dan TV kabel terbaik
+          </h1>
+          <p>makin nyaman dirumah dengan unlimited internet</p>
+        </div>
 
         <img
           src="paket.png"
-          className="z-30 absolute right-[-20px] w-[100%] bottom-[0px]"
+          className="z-30 absolute md:static right-[-20px] w-[100%] md:w-[50%] lg:w-[45%] bottom-[0px]"
           alt=""
         />
       </div>
@@ -98,7 +100,7 @@ export default function page({ searchParams }) {
         <div className="flex gap-[20px] flex-nowrap overflow-x-scroll py-[50px] px-[20px]">
           {dataCards &&
             dataCards.map((data, idx) => {
-              return <Card data={data} idx={idx} />;
+              return <Card data={data} idx={idx} key={idx} />;
             })}
         </div>
       </div>

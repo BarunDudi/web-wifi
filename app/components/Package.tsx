@@ -6,17 +6,17 @@ export default function Package() {
   return (
     <section className="bg-white relative px-[8px] py-[50px]">
       <div>
-        <h1 className="text-[1.5rem] text-center leading-7">
+        <h1 className="text-[1.5rem] text-center leading-7 lg:leading-10">
           Internet Rumah Bebas Kuota & Hiburan Terlengkap
         </h1>
-        <p className="text-center py-[10px]">
+        <p className="text-center py-[10px] lg:py-[20px]">
           pilih paket internetan bebas FUP sesuai kebutuhanmu!
         </p>
       </div>
 
-      <div className="flex flex-col gap-[30px]">
+      <div className="flex flex-col md:flex-row gap-[30px] md:flex-wrap justify-center lg:py-[100px]">
         {/* streaming */}
-        <div className="rounded-[9px] overflow-hidden flex flex-col shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+        <div className="md:w-[45%] lg:w-[30%] rounded-[9px] overflow-hidden flex flex-col shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           {/* header */}
           <div className="h-[200px] overflow-hidden relative">
             <img src="streaming.jpg" className="w-full" alt="" />
@@ -32,7 +32,7 @@ export default function Package() {
           <div className="px-[10px] pt-[20px] pb-[60px] flex justify-between items-start relative">
             <div className="flex flex-col">
               <div>
-                <img src="stream-logo.webp" className="h-[24px]" alt="" />
+                <img src="stream.webp" className="h-[24px]" alt="" />
                 <p>internet & streaming</p>
               </div>
               <div className="flex gap-[5px] bottom-3 pt-[10px]">
@@ -77,7 +77,7 @@ export default function Package() {
         </div>
 
         {/* tv */}
-        <div className="rounded-[9px] overflow-hidden flex flex-col shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+        <div className="md:w-[45%] lg:w-[30%] rounded-[9px] overflow-hidden flex flex-col shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           {/* header */}
           <div className="h-[200px] overflow-hidden relative">
             <img src="tv.jpg" className="w-full" alt="" />
@@ -126,7 +126,7 @@ export default function Package() {
         </div>
 
         {/* star */}
-        <div className="rounded-[9px] overflow-hidden flex flex-col shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+        <div className="md:w-[45%] lg:w-[30%] rounded-[9px] overflow-hidden flex flex-col shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           {/* header */}
           <div className="h-[200px] overflow-hidden relative">
             <img src="super.jpg" className="w-full" alt="" />
