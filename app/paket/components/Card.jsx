@@ -1,8 +1,9 @@
 import React from "react";
 import Banefit from "./Banefit";
 import { paketData } from "../paket";
+import Sduaratus from "./Sduaratus";
 
-export default function Card({ data, idx }: any) {
+export default function Card({ data, idx }) {
   return (
     <div
       className={`px-[15px] pt-[15px] pb-[70px] leading-[15px] rounded-[5px] bg-slate-100 shadow-lg border-[2px] border-opacity-50 shrink-0 relative max-w-[98%]`}
@@ -36,13 +37,24 @@ export default function Card({ data, idx }: any) {
           </div>
         </div>
 
-        <div className="w-[93px] h-[87px] relative bg-stone-600 rounded-full text-white">
+        <div className="w-[93px] h-[87px] relative rounded-full text-black">
+          <img src="speed/internet-speed.svg" alt="" />
+          <img
+            src={`/speed/${data.group}/internet-${
+              data.speed <= 100 ? "50" : data.speed <= 200 ? "200" : "300"
+            }.svg`}
+            className="absolute bottom-0 "
+            color="red"
+            style={{ fill: "red" }}
+            alt=""
+          />
+
           <div className="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <p>up to</p>
-            <div style={{ color: `#${data.rank.warna}` }}>
-              <h1 className="text-center text-[1.5rem] pt-[5px]">
+            <div>
+              <h2 className="text-center text-[1.5rem] pt-[5px]">
                 {data.speed}
-              </h1>
+              </h2>
               <p>Mbps</p>
             </div>
           </div>
@@ -63,7 +75,7 @@ export default function Card({ data, idx }: any) {
               <p>{data.streamtainments.length} streamtainments</p>
             </div>
             <div className="flex gap-[8px] pl-[25px]">
-              {data.streamtainments.map((i: any, idx: any) => {
+              {data.streamtainments.map((i, idx) => {
                 return (
                   <img
                     src={`stream/${i}`}

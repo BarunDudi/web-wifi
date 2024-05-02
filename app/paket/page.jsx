@@ -27,7 +27,7 @@ export default function page({ searchParams }) {
       {/* jumbotron */}
       <div className="h-[550px] bg-[#FFC55A] text-white py-[100px] lg:py-[300px] px-[10px] md:px-[50px] lg:px-[100px] relative overflow-hidden md:flex items-center">
         <div>
-          <h1 className="text-[2rem] leading-8 pb-[5px]">
+          <h1 className="text-[2rem] leading-8 pb-[5px] uppercase !font-donjose">
             Langganan wi-fi rumah dan TV kabel terbaik
           </h1>
           <p>makin nyaman dirumah dengan unlimited internet</p>
@@ -43,9 +43,9 @@ export default function page({ searchParams }) {
       <div className="py-[50px]">
         {/* header */}
         <div className="py-[20px]">
-          <h1 className="text-[1.5rem] text-center">
+          <h2 className="text-[1.5rem] text-center">
             Temukan paket yang cocok untuk kebutuhan
-          </h1>
+          </h2>
 
           {/* filter */}
           <div className="pt-[50px] pb-[10px] flex gap-[10px] flex-nowrap overflow-x-scroll w-full px-[10px]">
@@ -58,7 +58,7 @@ export default function page({ searchParams }) {
                 setFilter("semua");
               }}
             >
-              semua
+              Semua
             </button>
             <button
               className={`filter-button text-black ${
@@ -69,7 +69,7 @@ export default function page({ searchParams }) {
                 setFilter("stream");
               }}
             >
-              internet & streaming
+              Internet & Streaming
             </button>
             <button
               className={`filter-button text-black ${
@@ -80,7 +80,7 @@ export default function page({ searchParams }) {
                 setFilter("joy");
               }}
             >
-              internet & TV
+              Internet & TV
             </button>
             <p
               className={`filter-button text-black ${
@@ -91,7 +91,7 @@ export default function page({ searchParams }) {
                 setFilter("star");
               }}
             >
-              internet , TV & streaming
+              Internet , TV & Streaming
             </p>
           </div>
         </div>

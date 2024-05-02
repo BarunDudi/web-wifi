@@ -6,7 +6,7 @@ export default function Jumbotron() {
     <div className="h-[550px] md:h-[450px] lg:h-[550px] bg-[#14263f] text-white py-[100px] px-[10px] lg:px-[150px] relative overflow-hidden">
       <div className="md:flex md:gap-[15px] md:px-[20px] items-center md:justify-between md:pt-[50px]">
         <div>
-          <h1 className="text-[2rem] lg:leading-10 lg:text-[3rem] leading-8 pb-[5px]">
+          <h1 className="text-[2rem] lg:leading-10 lg:text-[3rem] leading-8 pb-[5px] uppercase !font-donjose">
             internetan tanpa batas
           </h1>
           <p>Rasakan kebebasan online tanpa kuota terbatas.</p>

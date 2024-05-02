@@ -6,9 +6,9 @@ export default function Package() {
   return (
     <section className="bg-white relative px-[8px] py-[50px]">
       <div>
-        <h1 className="text-[1.5rem] text-center leading-7 lg:leading-10">
+        <h2 className="text-[1.5rem] text-center leading-7 lg:leading-10">
           Internet Rumah Bebas Kuota & Hiburan Terlengkap
-        </h1>
+        </h2>
         <p className="text-center py-[10px] lg:py-[20px]">
           pilih paket internetan bebas FUP sesuai kebutuhanmu!
         </p>

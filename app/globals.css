@@ -12,8 +12,21 @@
   src: url(fonts/Poppins-Bold.ttf);
 }
 
+@font-face {
+  font-family: donjose;
+  src: url(fonts/DonJose_Black.otf);
+}
+
+.font-donjose {
+  font-family: donjose;
+}
+
 h1 {
- font-family: poppins; 
+ font-family: donjose; 
+}
+
+h2 {
+  font-family: poppins;
 }
 
 p {

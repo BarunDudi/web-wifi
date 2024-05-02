@@ -10,7 +10,7 @@ export const paketData = {
       cashbackPerMount: "15.000",
       rank: {
         warna: "CD7F32",
-        name: "bronze",
+        name: "Bronze",
       },
     },
     {
@@ -28,7 +28,7 @@ export const paketData = {
       extraCashback: "50.000",
       rank: {
         warna: "D7D7D7",
-        name: "silver",
+        name: "Silver",
       },
     },
     {
@@ -47,7 +47,7 @@ export const paketData = {
       extraCashback: "50.000",
       rank: {
         warna: "FFD700",
-        name: "gold",
+        name: "Gold",
       },
     },
   ],
@@ -68,7 +68,7 @@ export const paketData = {
       sudahTermasuk: "First Sport Pack",
       rank: {
         warna: "CD7F32",
-        name: "bronze",
+        name: "Bronze",
       },
     },
     {
@@ -89,7 +89,7 @@ export const paketData = {
       extraCashback: "50.000",
       rank: {
         warna: "D7D7D7",
-        name: "silver",
+        name: "Silver",
       },
     },
     {
@@ -110,7 +110,7 @@ export const paketData = {
       extraCashback: "50.000",
       rank: {
         warna: "FFD700",
-        name: "gold",
+        name: "Gold",
       },
     },
   ],
@@ -137,7 +137,7 @@ export const paketData = {
       extraCashback: "100.000",
       rank: {
         warna: "CD7F32",
-        name: "bronze",
+        name: "Bronze",
       },
     },
     {
@@ -163,7 +163,7 @@ export const paketData = {
       extraCashback: "100.000",
       rank: {
         warna: "D7D7D7",
-        name: "silver",
+        name: "Silver",
       },
     },
     {
@@ -189,7 +189,7 @@ export const paketData = {
       extraCashback: "100.000",
       rank: {
         warna: "FFD700",
-        name: "gold",
+        name: "Gold",
       },
     },
   ],
