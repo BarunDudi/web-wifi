@@ -33,7 +33,7 @@ export default function Navbar() {
       ref={navbarRef}
     >
       <div className="flex gap-[5px]">
-        <Link href={"/"}>
+        <Link href={"/"} aria-label="homepage">
           <img
             src={`logo-${ontop ? "dark" : "light"}.png`}
             className="h-[70px]"
@@ -71,17 +71,18 @@ export default function Navbar() {
           navbarShowed ? "translate-x-0" : "translate-x-[150%]"
         }`}
       >
-        <button>
-          <img
-            src="cross.svg"
+        {navbarShowed && (
+          <button
             className={`fixed top-[50px] w-[20px] duration-300 transition ${
               navbarShowed ? "right-[30px]" : "-right-[100px]"
             }`}
             onClick={() => {
               setNavbarShowed(false);
             }}
-          />
-        </button>
+          >
+            <img src="cross.svg" />
+          </button>
+        )}
         <div className="flex flex-col gap-[30px]">
           <Link
             href={"/"}

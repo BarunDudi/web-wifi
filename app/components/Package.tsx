@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Package() {
   return (
@@ -19,7 +20,11 @@ export default function Package() {
         <div className="md:w-[45%] lg:w-[30%] rounded-[9px] overflow-hidden flex flex-col shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           {/* header */}
           <div className="h-[200px] overflow-hidden relative">
-            <img src="streaming.jpg" className="w-full" alt="" />
+            <img
+              src="streaming.webp"
+              className="w-full"
+              alt="paket streaming"
+            />
             <div className="bg-white rounded-[5px] px-[14px] py-[3px] absolute top-[10px] left-[10px] flex items-center gap-[5px]">
               <div className="w-[7px] h-[7px] rounded-full bg-black"></div>
               <p className="text-[.8rem] font-bold text-gray-800">
@@ -32,35 +37,35 @@ export default function Package() {
           <div className="px-[10px] pt-[20px] pb-[60px] flex justify-between items-start relative">
             <div className="flex flex-col">
               <div>
-                <img src="stream.webp" className="h-[24px]" alt="" />
+                <img src="stream.webp" className="h-[24px]" alt="stream logo" />
                 <p>internet & streaming</p>
               </div>
               <div className="flex gap-[5px] bottom-3 pt-[10px]">
                 <img
-                  src="/stream/catchplay.webp"
-                  alt=""
+                  src="/stream/catchplay.jpg"
+                  alt="catchplay"
                   className="w-[20px] h-[20px]"
                 />
                 <img
-                  src="/stream/cinemaworld.webp"
-                  alt=""
+                  src="/stream/cinemaworld.jpg"
+                  alt="cinemaworld"
                   className="w-[20px] h-[20px]"
                 />
                 <img
-                  src="/stream/firstmediax.webp"
-                  alt=""
+                  src="/stream/firstmediax.jpg"
+                  alt="firstmediax"
                   className="w-[20px] h-[20px]"
                 />
                 <img
-                  src="/stream/hbogo.webp"
-                  alt=""
+                  src="/stream/hbogo.jpg"
+                  alt="hbo go"
                   className="w-[20px] h-[20px]"
                 />
               </div>
             </div>
 
             <div className="flex gap-[5px] items-center">
-              <img src="money.svg" className="w-[30px]" alt="" />
+              <img src="money.svg" className="w-[30px]" alt="money" />
               <div>
                 <p>mulai dari:</p>
                 <p className="font-bold">Rp 230.000</p>
@@ -80,7 +85,7 @@ export default function Package() {
         <div className="md:w-[45%] lg:w-[30%] rounded-[9px] overflow-hidden flex flex-col shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           {/* header */}
           <div className="h-[200px] overflow-hidden relative">
-            <img src="tv.jpg" className="w-full" alt="" />
+            <img src="tv.webp" className="w-full" alt="paket tv" />
             <div className="bg-white rounded-[5px] px-[14px] py-[3px] absolute top-[10px] left-[10px] flex items-center gap-[5px]">
               <div className="w-[7px] h-[7px] rounded-full bg-black"></div>
               <p className="text-[.8rem] font-bold text-gray-800">
@@ -93,13 +98,13 @@ export default function Package() {
           <div className="px-[10px] pt-[20px] pb-[60px] flex justify-between items-start relative">
             <div className="flex flex-col">
               <div>
-                <img src="joy.webp" className="h-[24px]" alt="" />
+                <img src="joy.webp" className="h-[24px]" alt="joy" />
                 <p>internet & tv</p>
               </div>
               <div className="flex gap-[5px] bottom-3 pt-[10px] items-center">
                 <img
-                  src="/stream/firstmediax.webp"
-                  alt=""
+                  src="/stream/firstmediax.jpg"
+                  alt="firstmediax"
                   className="w-[20px] h-[20px]"
                 />
                 <div className="border-[1px] border-slate-900 rounded-full px-[15px] py-[5px]">
@@ -129,7 +134,7 @@ export default function Package() {
         <div className="md:w-[45%] lg:w-[30%] rounded-[9px] overflow-hidden flex flex-col shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           {/* header */}
           <div className="h-[200px] overflow-hidden relative">
-            <img src="super.jpg" className="w-full" alt="" />
+            <img src="super.webp" className="w-full" alt="" />
             <div className="bg-white rounded-[5px] px-[14px] py-[3px] absolute top-[10px] left-[10px] flex items-center gap-[5px]">
               <div className="w-[7px] h-[7px] rounded-full bg-black"></div>
               <p className="text-[.8rem] font-bold text-gray-800">
@@ -147,23 +152,23 @@ export default function Package() {
               </div>
               <div className="flex gap-[5px] bottom-3 pt-[10px] items-center flex-wrap">
                 <img
-                  src="/stream/catchplay.webp"
-                  alt=""
+                  src="/stream/catchplay.jpg"
+                  alt="catchplay"
                   className="w-[20px] h-[20px]"
                 />
                 <img
-                  src="/stream/cinemaworld.webp"
-                  alt=""
+                  src="/stream/cinemaworld.jpg"
+                  alt="cinemaworld"
                   className="w-[20px] h-[20px]"
                 />
                 <img
-                  src="/stream/firstmediax.webp"
-                  alt=""
+                  src="/stream/firstmediax.jpg"
+                  alt="firstmediax"
                   className="w-[20px] h-[20px]"
                 />
                 <img
-                  src="/stream/hbogo.webp"
-                  alt=""
+                  src="/stream/hbogo.jpg"
+                  alt="hbo go"
                   className="w-[20px] h-[20px]"
                 />
               </div>
