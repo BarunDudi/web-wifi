@@ -67,8 +67,8 @@ export default function Package() {
             <div className="flex gap-[5px] items-center">
               <img src="money.svg" className="w-[30px]" alt="money" />
               <div>
-                <p>mulai dari:</p>
-                <p className="font-bold">Rp 230.000</p>
+                <p>paling murah :</p>
+                <p className="font-bold">Rp 245.000</p>
               </div>
             </div>
 
@@ -116,8 +116,8 @@ export default function Package() {
             <div className="flex gap-[5px] items-center">
               <img src="money.svg" className="w-[30px]" alt="" />
               <div>
-                <p>mulai dari:</p>
-                <p className="font-bold">Rp 250.500</p>
+                <p>paling murah :</p>
+                <p className="font-bold">Rp 295.000</p>
               </div>
             </div>
 
@@ -180,8 +180,8 @@ export default function Package() {
             <div className="flex gap-[5px] items-center">
               <img src="money.svg" className="w-[30px]" alt="" />
               <div>
-                <p>mulai dari:</p>
-                <p className="font-bold">Rp 805.500</p>
+                <p>paling murah :</p>
+                <p className="font-bold">Rp 975.000</p>
               </div>
             </div>
 
