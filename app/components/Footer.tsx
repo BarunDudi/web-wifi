@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <div className="bg-[#13181E] text-white py-[30px] px-[15px] relative">
@@ -25,9 +27,12 @@ export default function Footer() {
       </div>
 
       {/* contact */}
-      <div className={`fixed bottom-[10px] right-[10px]`}>
+      <Link
+        href={"https://api.whatsapp.com/send?phone=6285222341337"}
+        className={`fixed bottom-[10px] right-[10px]`}
+      >
         <img src="wa.svg" className="w-[50px]" alt="" />
-      </div>
+      </Link>
     </div>
   );
 }

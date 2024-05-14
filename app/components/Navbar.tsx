@@ -32,6 +32,7 @@ export default function Navbar() {
       }`}
       ref={navbarRef}
     >
+      {/* logo */}
       <div className="flex gap-[5px]">
         <Link href={"/"} aria-label="homepage">
           <img
@@ -42,6 +43,7 @@ export default function Navbar() {
         </Link>
       </div>
 
+      {/* navbar desktop */}
       <div className="hidden md:block">
         <div className="flex gap-[30px]">
           <Link href={"/"} className="font-figtree font-bold">
@@ -56,6 +58,7 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* hamburger */}
       <div className="md:hidden z-50">
         <img
           src={`hamburger-${ontop ? "white" : "black"}.svg`}
@@ -66,6 +69,7 @@ export default function Navbar() {
         />
       </div>
 
+      {/* navbar mobile */}
       <div
         className={`h-screen fixed bottom-0 text-black bg-white shadow-lg py-[150px] px-[50px] w-[80%] text-center duration-300 transition right-0 ${
           navbarShowed ? "translate-x-0" : "translate-x-[150%]"

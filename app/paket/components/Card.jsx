@@ -2,8 +2,14 @@ import React from "react";
 import Banefit from "./Banefit";
 import { paketData } from "../paket";
 import Sduaratus from "./Sduaratus";
+import Link from "next/link";
 
 export default function Card({ data, idx }) {
+  let waLink = "https://wa.me/6285222341337?text=";
+  const message = `halo, saya tertarik dengan paket ${data.group} ${data.rank.name}`;
+  const messageWithPercent20 = message.replace(/ /g, "%20");
+  waLink = waLink + messageWithPercent20;
+
   return (
     <div
       className={`px-[15px] pt-[15px] pb-[70px] leading-[15px] rounded-[5px] bg-slate-100 shadow-lg border-[2px] border-opacity-50 shrink-0 relative max-w-[98%]`}
@@ -145,9 +151,12 @@ export default function Card({ data, idx }) {
           )}
         </ul>
 
-        <button className="absolute bottom-[15px] right-[15px] font-figtree font-bold text-white bg-blue-400 hover:bg-blue-800 rounded-md text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+        <Link
+          href={waLink}
+          className="absolute bottom-[15px] right-[15px] font-figtree font-bold text-white bg-blue-400 hover:bg-blue-800 rounded-md text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+        >
           pesan
-        </button>
+        </Link>
       </div>
     </div>
   );
