@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   title: "firstmedia - bandung",
   description:
     "First Media memiliki layanan paket internet rumah yang cepat, murah, dan unlimited serta pilihan TV kabel berlangganan berkualitas HD terbaik di Indonesia.",
+  other: {
+    "http-equiv": "Content-Security-Policy",
+    content: "default-src 'self'; script-src 'self'; object-src 'none';",
+  },
+  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
