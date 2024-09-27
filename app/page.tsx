@@ -4,9 +4,11 @@ import Package from "./components/Package";
 
 export default function Home() {
   return (
-    <main className="flex flex-col">
-      <Jumbotron />
-      <Package />
-    </main>
+    <>
+      <main className="flex flex-col">
+        <Jumbotron />
+        <Package />
+      </main>
+    </>
   );
 }
