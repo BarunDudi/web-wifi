@@ -54,8 +54,8 @@ export default function page({ searchParams }) {
                 filter === "semua" ? "filter-active" : "filter-not-active"
               }`}
               onClick={() => {
-                router.push("/paket?v=semua");
                 setFilter("semua");
+                router.push("/paket?v=semua");
               }}
             >
               Semua
@@ -65,8 +65,8 @@ export default function page({ searchParams }) {
                 filter === "stream" ? "filter-active" : "filter-not-active"
               }`}
               onClick={() => {
-                router.push("/paket?v=stream");
                 setFilter("stream");
+                router.push("/paket?v=stream");
               }}
             >
               Internet & Streaming
@@ -76,8 +76,8 @@ export default function page({ searchParams }) {
                 filter === "joy" ? "filter-active" : "filter-not-active"
               }`}
               onClick={() => {
-                router.push("/paket?v=joy");
                 setFilter("joy");
+                router.push("/paket?v=joy");
               }}
             >
               Internet & TV
@@ -87,8 +87,8 @@ export default function page({ searchParams }) {
                 filter === "star" ? "filter-active" : "filter-not-active"
               }`}
               onClick={() => {
-                router.push("/paket?v=star");
                 setFilter("star");
+                router.push("/paket?v=star");
               }}
             >
               Internet , TV & Streaming
