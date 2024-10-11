@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Banefit from "./components/Banefit";
 import { paketData } from "./paket";
 import Card from "./components/Card";
+import ListOfService from "./components/ListOfService";
+import Link from "next/link";
 
 export default function page({ searchParams }) {
   const router = useRouter();
@@ -49,50 +51,38 @@ export default function page({ searchParams }) {
 
           {/* filter */}
           <div className="pt-[50px] pb-[10px] flex gap-[10px] flex-nowrap overflow-x-scroll w-full px-[10px]">
-            <button
+            <a
               className={`filter-button text-black ${
                 filter === "semua" ? "filter-active" : "filter-not-active"
               }`}
-              onClick={() => {
-                setFilter("semua");
-                router.push("/paket?v=semua");
-              }}
+              href="/paket?v=semua"
             >
               Semua
-            </button>
-            <button
+            </a>
+            <a
               className={`filter-button text-black ${
                 filter === "stream" ? "filter-active" : "filter-not-active"
               }`}
-              onClick={() => {
-                setFilter("stream");
-                router.push("/paket?v=stream");
-              }}
+              href="/paket?v=stream"
             >
               Internet & Streaming
-            </button>
-            <button
+            </a>
+            <a
               className={`filter-button text-black ${
                 filter === "joy" ? "filter-active" : "filter-not-active"
               }`}
-              onClick={() => {
-                setFilter("joy");
-                router.push("/paket?v=joy");
-              }}
+              href="/paket?v=joy"
             >
               Internet & TV
-            </button>
-            <p
+            </a>
+            <a
               className={`filter-button text-black ${
                 filter === "star" ? "filter-active" : "filter-not-active"
               }`}
-              onClick={() => {
-                setFilter("star");
-                router.push("/paket?v=star");
-              }}
+              href="/paket?v=star"
             >
               Internet , TV & Streaming
-            </p>
+            </a>
           </div>
         </div>
 
@@ -103,6 +93,8 @@ export default function page({ searchParams }) {
               return <Card data={data} idx={idx} key={idx} />;
             })}
         </div>
+
+        <ListOfService />
       </div>
     </div>
   );

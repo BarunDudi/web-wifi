@@ -10,6 +10,8 @@ export default function Card({ data, idx }) {
   const messageWithPercent20 = message.replace(/ /g, "%20");
   waLink = waLink + messageWithPercent20;
 
+  const hargaNormalPerTahun = Number(data.harga.replace(/\./g, "")) * 12;
+
   return (
     <div
       className={`px-[15px] pt-[15px] pb-[70px] leading-[15px] rounded-[5px] bg-slate-100 shadow-lg border-[2px] border-opacity-50 shrink-0 relative max-w-[98%]`}
@@ -70,6 +72,28 @@ export default function Card({ data, idx }) {
       {/* body */}
       <div className="py-[25px]">
         <ul className="flex flex-col gap-[10px]">
+          {data.hargaPerTahun && (
+            <li className="flex items-center gap-[5px]">
+              <img src="saving-light.svg" className="w-[20px]" alt="" />
+              <p>
+                harga berlangganan setahun:{" "}
+                <span className="text-green-600 font-bold">
+                  {data.hargaPerTahun}
+                </span>
+              </p>
+            </li>
+          )}
+
+          {data.hargaPerTahun && (
+            <li className="flex items-center gap-[5px]">
+              <img src="saving-light.svg" className="w-[20px]" alt="" />
+              <p>
+                harga normal pertahun:{" "}
+                {hargaNormalPerTahun.toLocaleString("id-ID")}
+              </p>
+            </li>
+          )}
+
           <li className="flex items-center gap-[5px]">
             <img src="device.svg" className="w-[20px]" alt="" />
             <p>ideal untuk {data.perangkat} perangkat</p>
@@ -98,6 +122,13 @@ export default function Card({ data, idx }) {
             <li className="flex items-center gap-[5px]">
               <img src="saving-light.svg" className="w-[20px]" alt="" />
               <p>cashback Rp {data.cashbackPerMount}/bulan</p>
+            </li>
+          )}
+
+          {data.bonus && (
+            <li className="flex items-center gap-[5px]">
+              <img src="saving-light.svg" className="w-[20px]" alt="" />
+              <p>{data.bonus}</p>
             </li>
           )}
 
