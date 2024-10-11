@@ -75,25 +75,19 @@ export default function Card({ data, idx }) {
           {data.hargaPerTahun && (
             <li className="flex items-center gap-[5px]">
               <img src="saving-light.svg" className="w-[20px]" alt="" />
+              <p>harga berlangganan setahun: </p>
               <p>
-                harga berlangganan setahun:{" "}
-                <span className="text-green-600 font-bold">
-                  {data.hargaPerTahun}
+                <span className="flex flex-col">
+                  <span className="text-green-600 font-bold">
+                    {data.hargaPerTahun}
+                  </span>
+                  <s className="text-[.7rem] ml-[5px]">
+                    {hargaNormalPerTahun.toLocaleString("id-ID")}
+                  </s>
                 </span>
               </p>
             </li>
           )}
-
-          {data.hargaPerTahun && (
-            <li className="flex items-center gap-[5px]">
-              <img src="saving-light.svg" className="w-[20px]" alt="" />
-              <p>
-                harga normal pertahun:{" "}
-                {hargaNormalPerTahun.toLocaleString("id-ID")}
-              </p>
-            </li>
-          )}
-
           <li className="flex items-center gap-[5px]">
             <img src="device.svg" className="w-[20px]" alt="" />
             <p>ideal untuk {data.perangkat} perangkat</p>
