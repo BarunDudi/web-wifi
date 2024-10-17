@@ -34,12 +34,15 @@ export default function Navbar() {
     >
       {/* logo */}
       <div className="flex gap-[5px]">
-        <Link href={"/"} aria-label="homepage">
+        <Link href={"/"} aria-label="homepage" className="py-[10px]">
           <img
             src={`logo-${ontop ? "dark" : "light"}.png`}
-            className="h-[70px]"
+            className="h-[50px]"
             alt=""
           />
+          <p className="text-[.5rem] text-center py-[5px]">
+            unofficial firstmedia website
+          </p>
         </Link>
       </div>
 
@@ -52,7 +55,7 @@ export default function Navbar() {
           <Link href={"/paket"} className="font-figtree font-bold">
             product
           </Link>
-          <Link href={"#"} className="font-figtree font-bold">
+          <Link href={"#about"} className="font-figtree font-bold">
             about
           </Link>
         </div>
