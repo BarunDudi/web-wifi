@@ -34,15 +34,25 @@ export default function Navbar() {
     >
       {/* logo */}
       <div className="flex gap-[5px]">
-        <Link href={"/"} aria-label="homepage" className="py-[10px]">
+        <Link
+          href={"/"}
+          aria-label="homepage"
+          className="py-[10px] flex gap-[10px]"
+        >
           <img
             src={`logo-${ontop ? "dark" : "light"}.png`}
             className="h-[50px]"
             alt=""
           />
-          <p className="text-[.5rem] text-center py-[5px]">
-            unofficial firstmedia website
-          </p>
+          <div
+            translate="no"
+            className="flex flex-col items-center justify-center"
+          >
+            <p className="font-donjose">FIRST MEDIA RESELLER</p>
+            <p className="text-[.5rem] text-center py-[5px]">
+              unofficial firstmedia website
+            </p>
+          </div>
         </Link>
       </div>
 
@@ -57,6 +67,9 @@ export default function Navbar() {
           </Link>
           <Link href={"#about"} className="font-figtree font-bold">
             about
+          </Link>
+          <Link href={"/contact"} className="font-figtree font-bold">
+            contact
           </Link>
         </div>
       </div>
@@ -106,11 +119,18 @@ export default function Navbar() {
             product
           </Link>
           <Link
-            href={"#"}
+            href={"#about"}
             onClick={() => setNavbarShowed(false)}
             className=" underline font-figtree font-bold"
           >
             about
+          </Link>
+          <Link
+            href={"/contact"}
+            onClick={() => setNavbarShowed(false)}
+            className=" underline font-figtree font-bold"
+          >
+            contact
           </Link>
         </div>
       </div>
