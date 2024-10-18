@@ -71,6 +71,9 @@ export default function Navbar() {
           <Link href={"/contact"} className="font-figtree font-bold">
             contact
           </Link>
+          <Link href={"/legal-disclaimer"} className="font-figtree font-bold">
+            legal disclaimer
+          </Link>
         </div>
       </div>
 
@@ -131,6 +134,13 @@ export default function Navbar() {
             className=" underline font-figtree font-bold"
           >
             contact
+          </Link>
+          <Link
+            href={"/legal-disclaimer"}
+            onClick={() => setNavbarShowed(false)}
+            className=" underline font-figtree font-bold"
+          >
+            legal disclaimer
           </Link>
         </div>
       </div>
